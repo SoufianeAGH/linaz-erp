@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-sable-50 text-encre font-corps antialiased; }
+h1, h2, h3 { @apply font-titre text-bordeaux-900; }
+.carte { @apply bg-white border border-sable-300 rounded-md; }
+.etiquette { @apply text-[11px] uppercase tracking-wider text-gris font-medium; }
+.num { font-variant-numeric: tabular-nums; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded px-4 py-2 text-sm font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bordeaux; }
+.btn-primaire { @apply btn bg-bordeaux text-white hover:bg-bordeaux-700; }
+.btn-secondaire { @apply btn border border-sable-600 text-bordeaux-900 bg-white hover:bg-sable-100; }
